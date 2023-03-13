@@ -1,0 +1,29 @@
+This is a simple model of observatory image quality and cost.  The seeing 
+conditions of mid-latitude sites are estimated using the empirical model 
+of Racine (2004,'Altitude, Elevation and Seeing', a report to the Large-
+aperture Synoptic Survey Telescope).  Only boundary-layer seeing and 
+free-atmosphere seeing are included in this model; scaled by telescope
+height above the ground and observatory altitude above sea level.  Dome 
+seeing is ignored.  The seeing at the polar site is taken to be that 
+reported for Dome C in Lawrence et al. (2004, Nature, 411, 278) plus the
+same model of ground-layer seeing, but improved by a given factor.  Total
+observatory cost is estimated (very crudely) from user-defined unit costs
+for roadway, enclosure, telescope, and adaptive optics (AO).
+
+The results are displayed as point-source detection signal-to-noise ratio.
+The plus sign represents the diffraction limit of an unobstructed circular 
+telescope of the specified diameter.  The total cost to achieve this 
+assumes, in part, sufficient AO actuators to reach diffraction-limited
+performance.  This is estimated by requiring one actuator per Fried diameter
+at the specified wavelength.  The other observatory costs are estimated in 
+a similar manner.  The roadway cost is simply the length of access road 
+multiplied by its per-kilometer expense.  The enclosure cost assumes a 
+hemispherical dome with a cylindrical base, both with the same per-area
+cost.  The enclosure base is set to be the same height as the telescope 
+pier, but note that for any pier height the telescope cost remains the per-
+area telescope cost multiplied by the aperture.
+
+For comparison, the image quality and cost of a conventional telescope is
+shown.  This is a telescope without AO - that is, limited by the natural 
+seeing.  The image quality for this option is just the seeing at the 
+telescope height scaled to the observed wavelength.
